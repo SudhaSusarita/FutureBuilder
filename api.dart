@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 class Api{
 
    Future<dynamic> getDetails() async{
-    final response = await http.get("http://192.168.1.21:8080/displayList");
+    final response = await http.get("http:/");
     return json.decode(response.body);
   }
 }
